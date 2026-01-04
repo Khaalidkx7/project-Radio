@@ -4,6 +4,9 @@
   box-sizing: border-box;
   font-family: Arial, sans-serif;
 }
+body{
+
+}
 
 /* Header */
 .top-header {
@@ -38,6 +41,10 @@ span{
   background: #111;
   padding: 12px;
   text-align: center;
+   position: sticky; /* Menu-gu wuu dhegayaa kor */
+  top: 0;
+  z-index: 1000;
+  width: 100%;
 }
 
 .navbar a {
@@ -634,12 +641,14 @@ border-radius: 30px;
     width: 100%;
     height: auto;
     margin-bottom: 15px;
-    border-bottom: 1px solid #ddd; /* Khad yar u dhaxaysii */
+    border-bottom: 1px solid #ddd; /
   }
   .cnts h4 {
     margin-left: 0;
   }
 }
+
+
 
 @media (max-width: 480px) {
   .hero-text h1 {
@@ -657,6 +666,14 @@ border-radius: 30px;
   .email {
     width: 100%;
   }
+  .ctct{
+    grid-template-columns: 1fr;
+  }
+  .container{
+    flex-direction: column;
+    align-items: center;
+  }
+ 
   /* Sawirka inuusan box-ka ka bixin */
   .sawir {
     width: 100%;
